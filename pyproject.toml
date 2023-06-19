@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "hw-11-rest"
+version = "0.1.0"
+description = ""
+authors = ["OlegAndrienko <OlegAndrienko@gmail.com>"]
+readme = "README.md"
+packages = [{include = "hw_11_rest"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.97.0"
+uvicorn = {extras = ["standart"], version = "^0.22.0"}
+sqlalchemy = "^2.0.16"
+psycopg2 = "^2.9.6"
+alembic = "^1.11.1"
+pydentic = {extras = ["email"], version = "^0.0.1.dev3"}
+pydantic = {extras = ["email"], version = "^1.10.9"}
+psycopg2-binary = "^2.9.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
